@@ -198,27 +198,27 @@ transition: wheel-rotate
 
 # Acto 3: Inteligencia Artificial
 
-<div class="pr-6 mt-2">
-<div class="space-y-4">
-  <div class="glass-panel p-4 v-click transition-transform hover:scale-105">
-    <h3 class="text-cyan-400 text-sm font-bold flex items-center gap-2 mb-2">
+<div class="pr-6 mt-1">
+<div class="space-y-3">
+  <div class="glass-panel p-3.5 v-click transition-transform hover:scale-105">
+    <h3 class="text-cyan-400 text-sm font-bold flex items-center gap-2 mb-1.5">
       <carbon-chart-evaluation /> Predicción de Demanda
     </h3>
-    <p class="text-xs text-slate-300">Modelos de Machine Learning anticipan escasez de stock basándose en temporalidad e historial.</p>
+    <p class="text-xs leading-snug text-slate-300">Modelos de Machine Learning anticipan escasez de stock basándose en temporalidad e historial.</p>
   </div>
   
-  <div class="glass-panel p-4 v-click transition-transform hover:scale-105">
-    <h3 class="text-blue-400 text-sm font-bold flex items-center gap-2 mb-2">
+  <div class="glass-panel p-3.5 v-click transition-transform hover:scale-105">
+    <h3 class="text-blue-400 text-sm font-bold flex items-center gap-2 mb-1.5">
       <carbon-map /> Priorización de Entregas
     </h3>
-    <p class="text-xs text-slate-300">Algoritmos de enrutamiento optimizan la logística considerando caminos rurales y urgencia.</p>
+    <p class="text-xs leading-snug text-slate-300">Algoritmos de enrutamiento optimizan la logística considerando caminos rurales y urgencia.</p>
   </div>
 
-  <div class="glass-panel p-4 v-click transition-transform hover:scale-105">
-    <h3 class="text-purple-400 text-sm font-bold flex items-center gap-2 mb-2">
+  <div class="glass-panel p-3.5 v-click transition-transform hover:scale-105">
+    <h3 class="text-purple-400 text-sm font-bold flex items-center gap-2 mb-1.5">
       <carbon-notification /> Recordatorios Inteligentes
     </h3>
-    <p class="text-xs text-slate-300">NLP para enviar notificaciones personalizadas vía WhatsApp/SMS para asegurar adherencia.</p>
+    <p class="text-xs leading-snug text-slate-300">NLP para enviar notificaciones personalizadas vía WhatsApp/SMS para asegurar adherencia.</p>
   </div>
 </div>
 </div>
@@ -400,51 +400,56 @@ transition: cube-left
 
 # Acto 6: Estructura de Costos y VAC
 
-<p class="text-slate-400 text-xs mb-3">Horizonte: <strong class="text-white">5 años</strong> · Tasa de descuento: <strong class="text-white">8% anual</strong> · Moneda: <strong class="text-white">CLP</strong></p>
+<p class="text-slate-400 text-[0.75rem] mb-2 flex justify-between">
+  <span>Horizonte: <strong class="text-white">5 años</strong> · Tasa: <strong class="text-white">8% anual</strong> · Moneda: <strong class="text-white">CLP</strong></span>
+  <span>FA(8%, 5 años) = <strong class="text-slate-300">3.9927</strong></span>
+</p>
 
-<div class="grid grid-cols-2 gap-4 v-click">
+<div class="grid grid-cols-2 gap-3 v-click">
 
-<div class="glass-panel p-4 border-l-4 border-blue-500">
-  <h3 class="text-blue-400 font-bold text-sm mb-3">Alt. 1 — Desarrollo Propio</h3>
-  <table class="w-full text-xs text-slate-300 border-collapse">
-    <thead><tr class="text-slate-500 border-b border-slate-700"><th class="text-left pb-1">Ítem de Costo</th><th class="text-right pb-1">Año 0</th><th class="text-right pb-1">Años 1-5</th></tr></thead>
-    <tbody>
-      <tr class="border-b border-slate-800/50"><td class="py-0.5">Desarrollo de software</td><td class="text-right py-0.5 text-white">$30.000.000</td><td class="text-right py-0.5 text-slate-500">—</td></tr>
-      <tr class="border-b border-slate-800/50"><td class="py-0.5">Infraestructura (cloud)</td><td class="text-right py-0.5 text-white">$8.000.000</td><td class="text-right py-0.5 text-white">$4.500.000</td></tr>
-      <tr class="border-b border-slate-800/50"><td class="py-0.5">Personal técnico</td><td class="text-right py-0.5 text-slate-500">—</td><td class="text-right py-0.5 text-white">$2.000.000</td></tr>
-      <tr class="border-b border-slate-800/50"><td class="py-0.5">Capacitación</td><td class="text-right py-0.5 text-white">$2.000.000</td><td class="text-right py-0.5 text-slate-500">—</td></tr>
-      <tr class="border-b border-slate-800/50"><td class="py-0.5">Licencias (open source)</td><td class="text-right py-0.5 text-slate-500">—</td><td class="text-right py-0.5 text-white">$0</td></tr>
-      <tr class="font-bold text-white border-t border-slate-600"><td class="py-0.5">Subtotal</td><td class="text-right py-0.5">$40.000.000</td><td class="text-right py-0.5">$6.500.000</td></tr>
-    </tbody>
-  </table>
-  <div class="mt-3 p-2 bg-blue-900/30 rounded-lg border border-blue-500/30 text-center">
-    <p class="text-slate-400 text-xs">VAC = $40M + $6,5M × FA(8%,5)</p>
-    <p class="text-blue-400 text-lg font-black mt-0.5">VAC = $65.971.370</p>
+<div class="glass-panel p-3 border-l-4 border-blue-500 flex flex-col justify-between">
+  <div>
+    <h3 class="text-blue-400 font-bold text-sm mb-2">Alt. 1 — Desarrollo Propio</h3>
+    <table class="w-full text-[0.7rem] text-slate-300 border-collapse">
+      <thead><tr class="text-slate-500 border-b border-slate-700"><th class="text-left pb-1">Ítem de Costo</th><th class="text-right pb-1">Año 0</th><th class="text-right pb-1">Años 1-5</th></tr></thead>
+      <tbody>
+        <tr class="border-b border-slate-800/50"><td class="py-0.5">Desarrollo de software</td><td class="text-right py-0.5 text-white">$30.000.000</td><td class="text-right py-0.5 text-slate-500">—</td></tr>
+        <tr class="border-b border-slate-800/50"><td class="py-0.5">Infraestructura (cloud)</td><td class="text-right py-0.5 text-white">$8.000.000</td><td class="text-right py-0.5 text-white">$4.500.000</td></tr>
+        <tr class="border-b border-slate-800/50"><td class="py-0.5">Personal técnico</td><td class="text-right py-0.5 text-slate-500">—</td><td class="text-right py-0.5 text-white">$2.000.000</td></tr>
+        <tr class="border-b border-slate-800/50"><td class="py-0.5">Capacitación</td><td class="text-right py-0.5 text-white">$2.000.000</td><td class="text-right py-0.5 text-slate-500">—</td></tr>
+        <tr class="border-b border-slate-800/50"><td class="py-0.5">Licencias (open source)</td><td class="text-right py-0.5 text-slate-500">—</td><td class="text-right py-0.5 text-white">$0</td></tr>
+        <tr class="font-bold text-white border-t border-slate-600"><td class="py-0.5">Subtotal</td><td class="text-right py-0.5">$40.000.000</td><td class="text-right py-0.5">$6.500.000</td></tr>
+      </tbody>
+    </table>
+  </div>
+  <div class="mt-2 p-1.5 bg-blue-900/30 rounded-lg border border-blue-500/30 text-center">
+    <p class="text-slate-400 text-[0.65rem]">VAC = $40M + $6,5M × FA(8%,5)</p>
+    <p class="text-blue-400 text-base font-black mt-0.5 leading-none">VAC = $65.971.370</p>
   </div>
 </div>
 
-<div class="glass-panel p-4 border-l-4 border-cyan-500">
-  <h3 class="text-cyan-400 font-bold text-sm mb-3">Alt. 2 — Power Platform</h3>
-  <table class="w-full text-xs text-slate-300 border-collapse">
-    <thead><tr class="text-slate-500 border-b border-slate-700"><th class="text-left pb-1">Ítem de Costo</th><th class="text-right pb-1">Año 0</th><th class="text-right pb-1">Años 1-5</th></tr></thead>
-    <tbody>
-      <tr class="border-b border-slate-800/50"><td class="py-0.5">Configuración e implementación</td><td class="text-right py-0.5 text-white">$8.000.000</td><td class="text-right py-0.5 text-slate-500">—</td></tr>
-      <tr class="border-b border-slate-800/50"><td class="py-0.5">Licencias Power Platform</td><td class="text-right py-0.5 text-slate-500">—</td><td class="text-right py-0.5 text-white">$9.000.000</td></tr>
-      <tr class="border-b border-slate-800/50"><td class="py-0.5">Azure Hosting</td><td class="text-right py-0.5 text-slate-500">—</td><td class="text-right py-0.5 text-white">$3.500.000</td></tr>
-      <tr class="border-b border-slate-800/50"><td class="py-0.5">Soporte técnico Microsoft</td><td class="text-right py-0.5 text-slate-500">—</td><td class="text-right py-0.5 text-white">$2.000.000</td></tr>
-      <tr class="border-b border-slate-800/50"><td class="py-0.5">Capacitación</td><td class="text-right py-0.5 text-white">$3.000.000</td><td class="text-right py-0.5 text-slate-500">—</td></tr>
-      <tr class="font-bold text-white border-t border-slate-600"><td class="py-0.5">Subtotal</td><td class="text-right py-0.5">$11.000.000</td><td class="text-right py-0.5">$14.500.000</td></tr>
-    </tbody>
-  </table>
-  <div class="mt-3 p-2 bg-cyan-900/30 rounded-lg border border-cyan-500/30 text-center">
-    <p class="text-slate-400 text-xs">VAC = $11M + $14,5M × FA(8%,5)</p>
-    <p class="text-cyan-400 text-lg font-black mt-0.5">VAC = $68.928.180</p>
+<div class="glass-panel p-3 border-l-4 border-cyan-500 flex flex-col justify-between">
+  <div>
+    <h3 class="text-cyan-400 font-bold text-sm mb-2">Alt. 2 — Power Platform</h3>
+    <table class="w-full text-[0.7rem] text-slate-300 border-collapse">
+      <thead><tr class="text-slate-500 border-b border-slate-700"><th class="text-left pb-1">Ítem de Costo</th><th class="text-right pb-1">Año 0</th><th class="text-right pb-1">Años 1-5</th></tr></thead>
+      <tbody>
+        <tr class="border-b border-slate-800/50"><td class="py-0.5">Configuración e implement.</td><td class="text-right py-0.5 text-white">$8.000.000</td><td class="text-right py-0.5 text-slate-500">—</td></tr>
+        <tr class="border-b border-slate-800/50"><td class="py-0.5">Licencias Power Platform</td><td class="text-right py-0.5 text-slate-500">—</td><td class="text-right py-0.5 text-white">$9.000.000</td></tr>
+        <tr class="border-b border-slate-800/50"><td class="py-0.5">Azure Hosting</td><td class="text-right py-0.5 text-slate-500">—</td><td class="text-right py-0.5 text-white">$3.500.000</td></tr>
+        <tr class="border-b border-slate-800/50"><td class="py-0.5">Soporte técnico Microsoft</td><td class="text-right py-0.5 text-slate-500">—</td><td class="text-right py-0.5 text-white">$2.000.000</td></tr>
+        <tr class="border-b border-slate-800/50"><td class="py-0.5">Capacitación</td><td class="text-right py-0.5 text-white">$3.000.000</td><td class="text-right py-0.5 text-slate-500">—</td></tr>
+        <tr class="font-bold text-white border-t border-slate-600"><td class="py-0.5">Subtotal</td><td class="text-right py-0.5">$11.000.000</td><td class="text-right py-0.5">$14.500.000</td></tr>
+      </tbody>
+    </table>
+  </div>
+  <div class="mt-2 p-1.5 bg-cyan-900/30 rounded-lg border border-cyan-500/30 text-center">
+    <p class="text-slate-400 text-[0.65rem]">VAC = $11M + $14,5M × FA(8%,5)</p>
+    <p class="text-cyan-400 text-base font-black mt-0.5 leading-none">VAC = $68.928.180</p>
   </div>
 </div>
 
 </div>
-
-<p class="text-center text-slate-500 text-xs mt-2 v-click">FA(8%, 5 años) = (1-(1.08)⁻⁵)/0.08 = <strong class="text-slate-300">3.9927</strong></p>
 
 ---
 layout: default
