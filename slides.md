@@ -23,7 +23,7 @@ fonts:
 
 <div class="glass-panel p-8 max-w-2xl mx-auto relative z-10">
 <div class="flex justify-center mb-4">
-  <img src="/logo.png" alt="MediClick Logo" class="h-16 object-contain hover:scale-105 transition-transform duration-500" />
+  <img src="/logo_nuevo.png" alt="MediClick Logo" class="h-24 object-contain hover:scale-105 transition-transform duration-500" />
 </div>
 
 <h1 class="text-4xl font-black text-white mb-3">
@@ -155,20 +155,33 @@ transition: cube-left
 ```mermaid
 sequenceDiagram
     autonumber
-    participant Paciente
-    participant MediClick
-    participant CESFAM
-    participant Farmacia
-    participant Distribución
+    
+    actor Paciente as 🧑‍🦱 Paciente
+    participant MediClick as 💻 MediClick AI
+    participant CESFAM as 🏥 CESFAM
+    participant Farmacia as 💊 Farmacia
+    participant Distrib as 🚚 Distribución
 
-    Paciente->>MediClick: Solicita o confirma receta médica
-    MediClick->>CESFAM: Valida receta e identidad
-    CESFAM-->>MediClick: Aprobación y datos de receta
-    MediClick->>Farmacia: Revisa inventario y reserva
-    Farmacia-->>MediClick: Medicamentos preparados
-    MediClick->>Distribución: Asigna ruta priorizada (IA)
-    Distribución->>Paciente: Entrega y confirmación biométrica
-    MediClick->>Paciente: Recordatorio automático de tratamiento
+    rect rgba(6, 182, 212, 0.1)
+    note right of Paciente: 📱 Fase 1: Solicitud y Validación
+    Paciente->>+MediClick: Solicita o confirma receta médica
+    MediClick->>+CESFAM: Valida receta e identidad
+    CESFAM-->>-MediClick: Aprobación y datos de receta
+    end
+
+    rect rgba(59, 130, 246, 0.1)
+    note right of MediClick: 🧠 Fase 2: IA y Logística
+    MediClick->>+Farmacia: Revisa inventario y reserva
+    Farmacia-->>-MediClick: Medicamentos preparados
+    MediClick->>+Distrib: Asigna ruta priorizada (IA)
+    end
+    
+    rect rgba(139, 92, 246, 0.1)
+    note right of Distrib: 📍 Fase 3: Última Milla
+    Distrib->>+Paciente: Entrega y confirmación biométrica
+    Distrib-->>-MediClick: Notificación de entrega exitosa
+    MediClick->>-Paciente: Recordatorio automático de tratamiento
+    end
 ```
 
 </div>
@@ -214,7 +227,7 @@ transition: wheel-rotate
 
 <div class="h-full flex items-center justify-center pl-4 v-click" v-motion :initial="{ scale: 0.8, opacity: 0 }" :enter="{ scale: 1, opacity: 1, transition: { duration: 600 } }">
 <div class="relative w-full rounded-2xl overflow-hidden shadow-[0_0_40px_rgba(14,165,233,0.4)] glow-box border border-slate-700">
-  <img src="/ai_dashboard.png" class="w-full object-cover" />
+  <img src="/ai_dashboard_pro.png" class="w-full object-cover" />
 </div>
 </div>
 
@@ -537,7 +550,7 @@ transition: fade
 <h1 class="text-5xl font-black mb-8">Gracias</h1>
 
 <div class="mt-8 flex justify-center">
-  <img src="/logo.png" class="h-16 object-contain drop-shadow-[0_0_20px_rgba(14,165,233,0.5)]" />
+  <img src="/logo_nuevo.png" class="h-28 object-contain drop-shadow-[0_0_20px_rgba(14,165,233,0.5)]" />
 </div>
 
 <div class="mt-10 flex justify-center gap-8 text-slate-400 text-base font-light">
