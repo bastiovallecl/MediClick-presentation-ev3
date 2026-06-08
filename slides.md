@@ -234,20 +234,31 @@ transition: wheel-rotate
 ---
 layout: center
 class: text-center
-transition: wheel-rotate
+transition: slide-up
 ---
 
-<h1 class="text-3xl font-black text-white mb-4">
+<h1 class="text-5xl font-black text-white mb-10 drop-shadow-[0_0_20px_rgba(255,255,255,0.3)]">
   Acto 4: Alternativas de Solución
 </h1>
 
-<p class="text-lg text-cyan-400 font-light mt-2" v-click>
-  Análisis de viabilidad técnica y económica
-</p>
+<div class="grid grid-cols-2 gap-8 w-full max-w-4xl mx-auto">
+  <div class="glass-panel p-8 relative overflow-hidden transition-all duration-500 transform" :class="$slidev.nav.clicks === 1 ? 'scale-110 border-blue-400 shadow-[0_0_40px_rgba(96,165,250,0.6)] z-10' : 'scale-100 border-slate-700 hover:border-blue-500/50'">
+    <div class="absolute inset-0 bg-blue-500/20 opacity-0 transition-opacity duration-500" :class="$slidev.nav.clicks === 1 ? 'opacity-100' : ''"></div>
+    <h3 class="text-3xl font-black text-blue-400 mb-3 relative z-10">Alternativa 1</h3>
+    <p class="text-xl text-white font-medium relative z-10">Desarrollo Propio Cloud-Native</p>
+  </div>
+  
+  <div class="glass-panel p-8 border border-slate-700 opacity-60 transition-all duration-500">
+    <h3 class="text-3xl font-bold text-slate-400 mb-3">Alternativa 2</h3>
+    <p class="text-xl text-slate-300 font-medium">Microsoft Power Platform</p>
+  </div>
+</div>
+
+<v-click />
 
 ---
 layout: center
-transition: wheel-rotate
+transition: zoom
 ---
 
 <div class="glass-panel p-6 relative overflow-hidden group w-full max-w-2xl glow-box">
@@ -274,7 +285,34 @@ transition: wheel-rotate
 
 ---
 layout: center
-transition: cube-left
+class: text-center
+transition: slide-up
+---
+
+<h1 class="text-5xl font-black text-white mb-10 drop-shadow-[0_0_20px_rgba(255,255,255,0.3)]">
+  Acto 4: Alternativas de Solución
+</h1>
+
+<div class="grid grid-cols-2 gap-8 w-full max-w-4xl mx-auto">
+  <div class="glass-panel p-8 border border-slate-700 opacity-50 transition-all duration-500">
+    <h3 class="text-3xl font-black text-slate-500 mb-3 flex justify-center items-center gap-2">
+      <carbon-checkmark class="text-green-500" /> Alternativa 1
+    </h3>
+    <p class="text-xl text-slate-400 font-medium">Desarrollo Propio Cloud-Native</p>
+  </div>
+  
+  <div class="glass-panel p-8 relative overflow-hidden transition-all duration-500 transform" :class="$slidev.nav.clicks === 1 ? 'scale-110 border-cyan-400 shadow-[0_0_40px_rgba(6,182,212,0.6)] z-10' : 'scale-100 border-slate-700 hover:border-cyan-500/50'">
+    <div class="absolute inset-0 bg-cyan-500/20 opacity-0 transition-opacity duration-500" :class="$slidev.nav.clicks === 1 ? 'opacity-100' : ''"></div>
+    <h3 class="text-3xl font-bold text-cyan-400 mb-3 relative z-10">Alternativa 2</h3>
+    <p class="text-xl text-white font-medium relative z-10">Microsoft Power Platform</p>
+  </div>
+</div>
+
+<v-click />
+
+---
+layout: center
+transition: zoom
 ---
 
 <div class="glass-panel p-6 relative overflow-hidden group w-full max-w-2xl glow-box">
