@@ -1,0 +1,21 @@
+{
+  "name": "mediclick-presentation",
+  "version": "1.0.0",
+  "private": true,
+  "scripts": {
+    "dev": "slidev --open",
+    "build": "slidev build",
+    "export": "slidev export"
+  },
+  "dependencies": {
+    "@slidev/cli": "^0.49.0",
+    "@slidev/theme-default": "*",
+    "@slidev/theme-seriph": "*",
+    "echarts": "^5.5.0",
+    "three": "^0.184.0"
+  },
+  "devDependencies": {
+    "@iconify-json/logos": "^1.2.11",
+    "@iconify-json/vscode-icons": "^1.2.55"
+  }
+}
