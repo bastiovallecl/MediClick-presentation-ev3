@@ -77,7 +77,7 @@ transition: cube-left
   <img src="/rural_patient.png" class="absolute inset-0 w-full h-full object-cover opacity-70" />
   <div class="absolute inset-0 bg-gradient-to-t from-[#0b1120] via-[#0b1120]/40 to-transparent"></div>
   <div class="absolute bottom-4 left-4 right-4">
-    <p class="text-base italic text-white font-serif leading-relaxed">"La tecnología debe acercar la salud a quienes más lo necesitan, no alejarla."</p>
+    <p class="text-base italic text-white font-serif leading-normal">"La tecnología debe acercar la salud a quienes más lo necesitan, no alejarla."</p>
   </div>
 </div>
 </div>
@@ -92,29 +92,29 @@ transition: cube-left
 
 <div class="grid grid-cols-3 gap-4 mt-4">
 
-<div class="glass-panel p-4 v-click border-l-4 border-red-400">
-  <h3 class="text-red-400 text-sm font-bold mb-3 flex items-center gap-2">
+<div class="glass-panel p-3 v-click border-l-4 border-red-400">
+  <h3 class="text-red-400 text-sm font-bold mb-2 flex items-center gap-2">
     <carbon-warning-alt /> Contexto
   </h3>
-  <p class="text-slate-300 text-xs leading-relaxed">
+  <p class="text-slate-300 text-xs leading-normal">
     En Chile, más de <span class="text-white font-bold">2 millones de personas</span> viven en zonas rurales o tienen movilidad reducida. Actualmente deben trasladarse al CESFAM para retirar sus medicamentos, lo que provoca <span class="text-red-400 font-semibold">abandono de tratamientos crónicos, reingresos hospitalarios evitables</span> y sobrecarga en los centros de salud.
   </p>
 </div>
 
-<div class="glass-panel p-4 v-click border-l-4 border-cyan-400">
-  <h3 class="text-cyan-400 text-sm font-bold mb-3 flex items-center gap-2">
+<div class="glass-panel p-3 v-click border-l-4 border-cyan-400">
+  <h3 class="text-cyan-400 text-sm font-bold mb-2 flex items-center gap-2">
     <carbon-flag /> Objetivo
   </h3>
-  <p class="text-slate-300 text-xs leading-relaxed">
+  <p class="text-slate-300 text-xs leading-normal">
     <span class="text-white font-bold">Desarrollar</span> un sistema digital integrado que automatice la gestión de recetas médicas y la distribución de medicamentos a domicilio, reduciendo en al menos un <span class="text-cyan-400 font-bold">60% el tiempo de acceso</span> al tratamiento para pacientes de difícil alcance.
   </p>
 </div>
 
-<div class="glass-panel p-4 v-click border-l-4 border-purple-400">
-  <h3 class="text-purple-400 text-sm font-bold mb-3 flex items-center gap-2">
+<div class="glass-panel p-3 v-click border-l-4 border-purple-400">
+  <h3 class="text-purple-400 text-sm font-bold mb-2 flex items-center gap-2">
     <carbon-list /> Alcance
   </h3>
-  <ul class="text-slate-300 text-xs space-y-1.5 leading-relaxed">
+  <ul class="text-slate-300 text-xs space-y-1.5 leading-normal">
     <li class="flex gap-1.5"><carbon-checkmark class="text-green-400 mt-0.5 shrink-0"/><span>Módulos: gestión de recetas, despacho, seguimiento y notificaciones</span></li>
     <li class="flex gap-1.5"><carbon-checkmark class="text-green-400 mt-0.5 shrink-0"/><span>Integración con CESFAM y farmacias piloto</span></li>
     <li class="flex gap-1.5"><carbon-checkmark class="text-green-400 mt-0.5 shrink-0"/><span>Hasta 5.000 usuarios en fase piloto</span></li>
@@ -407,14 +407,14 @@ transition: cube-left
 <div class="glass-panel p-4 border-l-4 border-blue-500">
   <h3 class="text-blue-400 font-bold text-sm mb-3">Alt. 1 — Desarrollo Propio</h3>
   <table class="w-full text-xs text-slate-300 border-collapse">
-    <thead><tr class="text-slate-500 border-b border-slate-700"><th class="text-left pb-1.5">Ítem de Costo</th><th class="text-right pb-1.5">Año 0</th><th class="text-right pb-1.5">Años 1-5</th></tr></thead>
+    <thead><tr class="text-slate-500 border-b border-slate-700"><th class="text-left pb-1">Ítem de Costo</th><th class="text-right pb-1">Año 0</th><th class="text-right pb-1">Años 1-5</th></tr></thead>
     <tbody>
-      <tr class="border-b border-slate-800/50"><td class="py-1.5">Desarrollo de software</td><td class="text-right py-1.5 text-white">$30.000.000</td><td class="text-right py-1.5 text-slate-500">—</td></tr>
-      <tr class="border-b border-slate-800/50"><td class="py-1.5">Infraestructura (cloud)</td><td class="text-right py-1.5 text-white">$8.000.000</td><td class="text-right py-1.5 text-white">$4.500.000</td></tr>
-      <tr class="border-b border-slate-800/50"><td class="py-1.5">Personal técnico</td><td class="text-right py-1.5 text-slate-500">—</td><td class="text-right py-1.5 text-white">$2.000.000</td></tr>
-      <tr class="border-b border-slate-800/50"><td class="py-1.5">Capacitación</td><td class="text-right py-1.5 text-white">$2.000.000</td><td class="text-right py-1.5 text-slate-500">—</td></tr>
-      <tr class="border-b border-slate-800/50"><td class="py-1.5">Licencias (open source)</td><td class="text-right py-1.5 text-slate-500">—</td><td class="text-right py-1.5 text-white">$0</td></tr>
-      <tr class="font-bold text-white border-t border-slate-600"><td class="py-1.5">Subtotal</td><td class="text-right py-1.5">$40.000.000</td><td class="text-right py-1.5">$6.500.000</td></tr>
+      <tr class="border-b border-slate-800/50"><td class="py-0.5">Desarrollo de software</td><td class="text-right py-0.5 text-white">$30.000.000</td><td class="text-right py-0.5 text-slate-500">—</td></tr>
+      <tr class="border-b border-slate-800/50"><td class="py-0.5">Infraestructura (cloud)</td><td class="text-right py-0.5 text-white">$8.000.000</td><td class="text-right py-0.5 text-white">$4.500.000</td></tr>
+      <tr class="border-b border-slate-800/50"><td class="py-0.5">Personal técnico</td><td class="text-right py-0.5 text-slate-500">—</td><td class="text-right py-0.5 text-white">$2.000.000</td></tr>
+      <tr class="border-b border-slate-800/50"><td class="py-0.5">Capacitación</td><td class="text-right py-0.5 text-white">$2.000.000</td><td class="text-right py-0.5 text-slate-500">—</td></tr>
+      <tr class="border-b border-slate-800/50"><td class="py-0.5">Licencias (open source)</td><td class="text-right py-0.5 text-slate-500">—</td><td class="text-right py-0.5 text-white">$0</td></tr>
+      <tr class="font-bold text-white border-t border-slate-600"><td class="py-0.5">Subtotal</td><td class="text-right py-0.5">$40.000.000</td><td class="text-right py-0.5">$6.500.000</td></tr>
     </tbody>
   </table>
   <div class="mt-3 p-2 bg-blue-900/30 rounded-lg border border-blue-500/30 text-center">
@@ -426,14 +426,14 @@ transition: cube-left
 <div class="glass-panel p-4 border-l-4 border-cyan-500">
   <h3 class="text-cyan-400 font-bold text-sm mb-3">Alt. 2 — Power Platform</h3>
   <table class="w-full text-xs text-slate-300 border-collapse">
-    <thead><tr class="text-slate-500 border-b border-slate-700"><th class="text-left pb-1.5">Ítem de Costo</th><th class="text-right pb-1.5">Año 0</th><th class="text-right pb-1.5">Años 1-5</th></tr></thead>
+    <thead><tr class="text-slate-500 border-b border-slate-700"><th class="text-left pb-1">Ítem de Costo</th><th class="text-right pb-1">Año 0</th><th class="text-right pb-1">Años 1-5</th></tr></thead>
     <tbody>
-      <tr class="border-b border-slate-800/50"><td class="py-1.5">Configuración e implementación</td><td class="text-right py-1.5 text-white">$8.000.000</td><td class="text-right py-1.5 text-slate-500">—</td></tr>
-      <tr class="border-b border-slate-800/50"><td class="py-1.5">Licencias Power Platform</td><td class="text-right py-1.5 text-slate-500">—</td><td class="text-right py-1.5 text-white">$9.000.000</td></tr>
-      <tr class="border-b border-slate-800/50"><td class="py-1.5">Azure Hosting</td><td class="text-right py-1.5 text-slate-500">—</td><td class="text-right py-1.5 text-white">$3.500.000</td></tr>
-      <tr class="border-b border-slate-800/50"><td class="py-1.5">Soporte técnico Microsoft</td><td class="text-right py-1.5 text-slate-500">—</td><td class="text-right py-1.5 text-white">$2.000.000</td></tr>
-      <tr class="border-b border-slate-800/50"><td class="py-1.5">Capacitación</td><td class="text-right py-1.5 text-white">$3.000.000</td><td class="text-right py-1.5 text-slate-500">—</td></tr>
-      <tr class="font-bold text-white border-t border-slate-600"><td class="py-1.5">Subtotal</td><td class="text-right py-1.5">$11.000.000</td><td class="text-right py-1.5">$14.500.000</td></tr>
+      <tr class="border-b border-slate-800/50"><td class="py-0.5">Configuración e implementación</td><td class="text-right py-0.5 text-white">$8.000.000</td><td class="text-right py-0.5 text-slate-500">—</td></tr>
+      <tr class="border-b border-slate-800/50"><td class="py-0.5">Licencias Power Platform</td><td class="text-right py-0.5 text-slate-500">—</td><td class="text-right py-0.5 text-white">$9.000.000</td></tr>
+      <tr class="border-b border-slate-800/50"><td class="py-0.5">Azure Hosting</td><td class="text-right py-0.5 text-slate-500">—</td><td class="text-right py-0.5 text-white">$3.500.000</td></tr>
+      <tr class="border-b border-slate-800/50"><td class="py-0.5">Soporte técnico Microsoft</td><td class="text-right py-0.5 text-slate-500">—</td><td class="text-right py-0.5 text-white">$2.000.000</td></tr>
+      <tr class="border-b border-slate-800/50"><td class="py-0.5">Capacitación</td><td class="text-right py-0.5 text-white">$3.000.000</td><td class="text-right py-0.5 text-slate-500">—</td></tr>
+      <tr class="font-bold text-white border-t border-slate-600"><td class="py-0.5">Subtotal</td><td class="text-right py-0.5">$11.000.000</td><td class="text-right py-0.5">$14.500.000</td></tr>
     </tbody>
   </table>
   <div class="mt-3 p-2 bg-cyan-900/30 rounded-lg border border-cyan-500/30 text-center">
@@ -501,7 +501,7 @@ transition: zoom-3d
 
 <div class="max-w-3xl mx-auto text-center" v-motion :initial="{ scale: 0.9, opacity: 0 }" :enter="{ scale: 1, opacity: 1, transition: { duration: 1000, ease: 'easeOut' } }">
   
-<div class="inline-block px-4 py-1.5 mb-4 rounded-full border border-cyan-400/40 bg-cyan-500/20 text-cyan-300 font-bold text-xs tracking-[0.2em] uppercase shadow-[0_0_15px_rgba(6,182,212,0.5)]">
+<div class="inline-block px-4 py-0.5 mb-4 rounded-full border border-cyan-400/40 bg-cyan-500/20 text-cyan-300 font-bold text-xs tracking-[0.2em] uppercase shadow-[0_0_15px_rgba(6,182,212,0.5)]">
   Veredicto Final
 </div>
 
@@ -514,7 +514,7 @@ transition: zoom-3d
 </h2>
 
 <div class="glass-panel p-6 text-left grid grid-cols-2 gap-5 relative glow-box">
-  <div class="col-span-2 text-sm text-slate-300 text-center border-b border-slate-700/50 pb-4 leading-relaxed">
+  <div class="col-span-2 text-sm text-slate-300 text-center border-b border-slate-700/50 pb-4 leading-normal">
     Pese a tener una inversión inicial mayor, la Alt. 1 ofrece <strong class="text-white">mayor eficiencia por peso invertido</strong>, sin dependencia de licencias externas y con plena capacidad de adaptación al sistema de salud público chileno.
   </div>
   
@@ -523,7 +523,7 @@ transition: zoom-3d
       <carbon-rocket class="text-4xl text-blue-400 drop-shadow-[0_0_10px_rgba(59,130,246,0.8)]" />
     </div>
     <h3 class="font-bold text-white text-base">VAC/P Superior</h3>
-    <p class="text-xs text-slate-400 mt-2 leading-relaxed">$3.665.076 vs $6.266.198 — 71% más eficiente en costo por punto de valor entregado.</p>
+    <p class="text-xs text-slate-400 mt-2 leading-normal">$3.665.076 vs $6.266.198 — 71% más eficiente en costo por punto de valor entregado.</p>
   </div>
   
   <div class="flex flex-col items-center justify-center text-center p-4 transition-transform hover:-translate-y-1">
@@ -531,7 +531,7 @@ transition: zoom-3d
       <carbon-chart-line-smooth class="text-4xl text-cyan-400 drop-shadow-[0_0_10px_rgba(6,182,212,0.8)]" />
     </div>
     <h3 class="font-bold text-white text-base">Escalabilidad Ilimitada</h3>
-    <p class="text-xs text-slate-400 mt-2 leading-relaxed">Arquitectura preparada para integrarse con MINSAL y escalar a nivel nacional sin costos adicionales.</p>
+    <p class="text-xs text-slate-400 mt-2 leading-normal">Arquitectura preparada para integrarse con MINSAL y escalar a nivel nacional sin costos adicionales.</p>
   </div>
 </div>
 
@@ -566,7 +566,7 @@ transition: cube-left
     <p class="text-2xl font-black text-white">Alternativa 1</p>
     <p class="text-blue-400 text-sm font-semibold mt-1">Desarrollo Propio Cloud-Native</p>
   </div>
-  <p class="text-slate-300 text-xs leading-relaxed">
+  <p class="text-slate-300 text-xs leading-normal">
     Representa la mejor relación costo-eficiencia (<span class="text-blue-400 font-bold">VAC/P = $3.665.076</span>), mayor efectividad tecnológica y sostenibilidad financiera a largo plazo. La mayor inversión inicial se justifica por la reducción en costos de licencias y el control total sobre la plataforma.
   </p>
 </div>
