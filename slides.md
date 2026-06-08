@@ -150,9 +150,9 @@ transition: cube-left
 
 # Flujo Operativo Inteligente
 
-<div class="mt-4 glass-panel p-5 rounded-2xl v-click glow-box">
+<div class="mt-4 glass-panel p-3 rounded-2xl v-click glow-box">
 
-```mermaid
+```mermaid {scale: 0.55}
 sequenceDiagram
     autonumber
     
@@ -191,43 +191,35 @@ sequenceDiagram
 </p>
 
 ---
-layout: two-cols
-class: bg-grid
+layout: center
+class: bg-grid text-center
 transition: wheel-rotate
 ---
 
 # Acto 3: Inteligencia Artificial
 
-<div class="pr-6 mt-1">
-<div class="space-y-3">
-  <div class="glass-panel p-3.5 v-click transition-transform hover:scale-105">
-    <h3 class="text-cyan-400 text-sm font-bold flex items-center gap-2 mb-1.5">
-      <carbon-chart-evaluation /> Predicción de Demanda
+<div class="max-w-md mx-auto mt-2 w-full px-4">
+<div class="space-y-3 text-center">
+  <div class="glass-panel p-3 v-click transition-transform hover:scale-105 shadow-[0_0_15px_rgba(6,182,212,0.15)] border border-cyan-500/20">
+    <h3 class="text-cyan-400 text-sm font-bold flex justify-center items-center gap-2 mb-1">
+      <carbon-chart-evaluation class="text-lg" /> Predicción de Demanda
     </h3>
-    <p class="text-xs leading-snug text-slate-300">Modelos de Machine Learning anticipan escasez de stock basándose en temporalidad e historial.</p>
+    <p class="text-xs text-slate-300 leading-snug">Modelos de Machine Learning anticipan escasez de stock basándose en temporalidad e historial.</p>
   </div>
   
-  <div class="glass-panel p-3.5 v-click transition-transform hover:scale-105">
-    <h3 class="text-blue-400 text-sm font-bold flex items-center gap-2 mb-1.5">
-      <carbon-map /> Priorización de Entregas
+  <div class="glass-panel p-3 v-click transition-transform hover:scale-105 shadow-[0_0_15px_rgba(59,130,246,0.15)] border border-blue-500/20">
+    <h3 class="text-blue-400 text-sm font-bold flex justify-center items-center gap-2 mb-1">
+      <carbon-map class="text-lg" /> Priorización de Entregas
     </h3>
-    <p class="text-xs leading-snug text-slate-300">Algoritmos de enrutamiento optimizan la logística considerando caminos rurales y urgencia.</p>
+    <p class="text-xs text-slate-300 leading-snug">Algoritmos de enrutamiento optimizan la logística considerando caminos rurales y urgencia.</p>
   </div>
 
-  <div class="glass-panel p-3.5 v-click transition-transform hover:scale-105">
-    <h3 class="text-purple-400 text-sm font-bold flex items-center gap-2 mb-1.5">
-      <carbon-notification /> Recordatorios Inteligentes
+  <div class="glass-panel p-3 v-click transition-transform hover:scale-105 shadow-[0_0_15px_rgba(168,85,247,0.15)] border border-purple-500/20">
+    <h3 class="text-purple-400 text-sm font-bold flex justify-center items-center gap-2 mb-1">
+      <carbon-notification class="text-lg" /> Recordatorios Inteligentes
     </h3>
-    <p class="text-xs leading-snug text-slate-300">NLP para enviar notificaciones personalizadas vía WhatsApp/SMS para asegurar adherencia.</p>
+    <p class="text-xs text-slate-300 leading-snug">NLP para enviar notificaciones personalizadas vía WhatsApp/SMS para asegurar adherencia.</p>
   </div>
-</div>
-</div>
-
-::right::
-
-<div class="h-full flex items-center justify-center pl-4 v-click" v-motion :initial="{ scale: 0.8, opacity: 0 }" :enter="{ scale: 1, opacity: 1, transition: { duration: 600 } }">
-<div class="relative w-full rounded-2xl overflow-hidden shadow-[0_0_40px_rgba(14,165,233,0.4)] glow-box border border-slate-700">
-  <img src="/ai_dashboard_pro.png" class="w-full object-cover" />
 </div>
 </div>
 

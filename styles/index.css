@@ -9,6 +9,10 @@
   --slidev-code-background: #0f172a;
 }
 
+html {
+  font-size: 14px !important;
+}
+
 html.dark {
   --slidev-theme-background: #0b1120;
 }
